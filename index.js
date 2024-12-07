@@ -5,6 +5,7 @@
 //To install packages: "npm i inquirer", and "npm i fs".
 import inquirer from "inquirer";
 import fs from "fs";
+import generateMarkdown from "./utils/generateMarkdown.js";
 // TODO: Create an array of questions for user input
 
     const questions = [
@@ -33,7 +34,7 @@ import fs from "fs";
         type: 'list',
         name: 'license',
         message:'Select which license your project will use.',
-        choices: ['Apache 2.0', 'Boost 1.0', 'MIT', 'MPL 2.0']
+        choices: ['none','Apache 2.0', 'Boost 1.0', 'MIT', 'MPL 2.0']
     },
     {
         type: 'input',
@@ -60,12 +61,17 @@ import fs from "fs";
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-
+fs.writeFile(fileName, data, err => {
+            err ? console.error(err) : console.log('File created!');
+        })
 }
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(questions).then 
+    inquirer.prompt(questions).then((answers) => { 
+        const markDown = generateMarkdown(answers)
+        writeToFile("./demo.md",markDown)
+    })
     
 }
 

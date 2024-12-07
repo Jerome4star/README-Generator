@@ -19,11 +19,12 @@ function renderLicenseSection(license) {
 
 
 }
-
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
 //to do: add more data that will be on the readme generated
+// TODO: Create a function to generate markdown for README
+function generateMarkdown(answers) {
+  return ` ${renderLicenseBadge(answers.license)}
+  # ${answers.title}
+
 `;
 }
 
