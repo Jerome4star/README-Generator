@@ -1,5 +1,5 @@
-# This Demo
-  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# demo
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
   ## Description 
@@ -34,9 +34,9 @@
 
   ## License 
   
-    Copyright @ Apache 2.0. All rights reserved.
+    Copyright @ MIT. All rights reserved.
   
-    Licensed under the Apache 2.0 license.
+    Licensed under the MIT license.
 
   ## Contributing
 
