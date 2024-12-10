@@ -20,7 +20,7 @@ function renderLicenseLink(license) {
   if (license === 'none'){
     return ' '
   }else {
-    return `[License](#license)`
+    return `* [License](#license)`
   }
 }
 //check if user has selected option for license, if so, 
@@ -62,7 +62,7 @@ function generateMarkdown(answers) {
 
   * [Usage](#usage)
 
-  * ${renderLicenseLink(answers.license)}
+  ${renderLicenseLink(answers.license)}
   
   * [Contributing](#contributing)
 

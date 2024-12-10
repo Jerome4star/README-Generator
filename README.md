@@ -28,7 +28,7 @@ You can access more badges and their purposes at [shields.io](https://shields.io
 
   Here is an MP4 video showing the entire process that can be watched through the Awesome Screenshot link below.
   
-  [Walkthrough video]()
+  [Walkthrough video](https://www.awesomescreenshot.com/video/34489083?key=0aa4f77c12b867da36b1bf22641e7069)
   
   
       
