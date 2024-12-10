@@ -1,8 +1,7 @@
 // TODO: Include packages needed for this application
-//remember to run "npm init -y" to initialize the node packet manager in 
 //order to install the npm packages required.
-//Then do npm install before importing any packages.
-//To install packages: "npm i inquirer", and "npm i fs".
+//To install packages: "npm i"
+//To run: "node index.js"
 import inquirer from "inquirer";
 import fs from "fs";
 import generateMarkdown from "./utils/generateMarkdown.js";
@@ -49,7 +48,7 @@ import generateMarkdown from "./utils/generateMarkdown.js";
     {
         type: 'input',
         name: 'username',
-        message: "Enter your GitHub Email address.",
+        message: "Enter your GitHub username.",
     },
     {
         type: 'input',
