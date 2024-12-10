@@ -37,7 +37,7 @@ import generateMarkdown from "./utils/generateMarkdown.js";
     },
     {
         type: 'input',
-        name: 'contributions',
+        name: 'contributing',
         message: "How will other developers contribute to your project?",
     },
     {

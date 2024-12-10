@@ -19,15 +19,9 @@ function renderLicenseBadge(license){
 function renderLicenseLink(license) {
   if (license === 'none'){
     return ' '
-  }else if (license === 'Apache 2.0') {
-    return "[Apache 2.0](https://opensource.org/licenses/Apache-2.0)"
-  }else if (license === 'Boost 1.0') {
-    return "[Boost 1.0](https://www.boost.org/LICENSE_1_0.txt)"
-  }else if (license === 'MIT'){
-    return "[MIT](https://opensource.org/licenses/MIT)"
-  }else if (license === 'MPL 2.0'){
-    return "[MPL 2.0](https://opensource.org/licenses/MPL-2.0)"
-  };
+  }else {
+    return `[License](#license)`
+  }
 }
 //check if user has selected option for license, if so, 
 //render link to readme license section.
@@ -67,14 +61,14 @@ function generateMarkdown(answers) {
   * [Installations](#installations)
 
   * [Usage](#usage)
+
+  * ${renderLicenseLink(answers.license)}
   
-  * [Contributors](#contributors)
+  * [Contributing](#contributing)
 
   * [Test](#tests)
 
   * [Questions](#questions)
-
-  * ${renderLicenseLink(answers.license)}
   
   ## Installations 
 
@@ -90,9 +84,9 @@ function generateMarkdown(answers) {
 
   ${renderLicenseSection(answers.license)}
 
-  ## Contributors
+  ## Contributing
 
-  ${answers.contributors}
+  ${answers.contributing}
 
   ## Tests
 
@@ -106,7 +100,7 @@ function generateMarkdown(answers) {
 
   For additional questions, contact me at the email provided below. 
 
-  - GitHub: ${answers.github}
+  - GitHub: ${answers.username}
   - Email:  ${answers.email}
 `;
 }
